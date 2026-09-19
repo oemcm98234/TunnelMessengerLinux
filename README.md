@@ -76,8 +76,6 @@ packageVersion `15.0.0`).
 
 **Авто-режим** (`ui/theme/SystemTheme.kt`):
 
-- **Windows**: `reg query HKCU\…\Themes\Personalize /v AppsUseLightTheme`
-  (0x1 — светлая, 0x0 — тёмная);
 - **Linux**: `gsettings get org.gnome.desktop.interface color-scheme`
   (`prefer-dark`/`prefer-light`), иначе `gtk-theme` с «dark» в имени;
 - результат кэшируется на **10 с** (запрос реестра/gsettings — внешний
